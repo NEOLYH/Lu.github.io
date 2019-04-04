@@ -331,7 +331,7 @@
                 
               
 
-              <time title="Created: 2019-04-04 09:43:00 / Modified: 10:05:50" itemprop="dateCreated datePublished" datetime="2019-04-04T09:43:00+08:00">2019-04-04</time>
+              <time title="Created: 2019-04-04 09:43:00 / Modified: 16:19:54" itemprop="dateCreated datePublished" datetime="2019-04-04T09:43:00+08:00">2019-04-04</time>
             
 
             
@@ -372,9 +372,57 @@
       
         
           
-            <p>缘起</p>
-<p>移动开发经历了原生开发以及跨平台开发的过程，跨平台开发的主旨在于解决原生开发的开发成本，学习成本，时间成本高这些问题。而微信小程序也是在这样的大环境下孕育而生的。而小程序也属于众多跨平台开发中的H5+原生式的跨平台技术。</p>
-
+            <h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p> 移动开发经历了原生开发以及跨平台开发的过程，跨平台开发的主旨在于解决原生开发的开发成本，学习成本，时间成本高这些问题。而微信小程序也是在这样的大环境下孕育而生的。而小程序也属于众多跨平台开发中的H5 +原生式的跨平台技术。</p>
+<table>
+<thead>
+<tr>
+<th>技术类型</th>
+<th>UI渲染方式</th>
+<th>性能</th>
+<th>开发效率</th>
+<th>动态化</th>
+<th>框架代表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H5+原生</td>
+<td>webView渲染</td>
+<td>一般</td>
+<td>高</td>
+<td>支持</td>
+<td>Cordova 、小程序</td>
+</tr>
+<tr>
+<td>JavaScript + 原生渲染</td>
+<td>原生控件渲染</td>
+<td>好</td>
+<td>高</td>
+<td>支持</td>
+<td>RN、Weex</td>
+</tr>
+<tr>
+<td>自绘UI + 原生</td>
+<td>调用系统API渲染</td>
+<td>好</td>
+<td>高</td>
+<td>默认不支持</td>
+<td>Flutter</td>
+</tr>
+</tbody>
+</table>
+<h6 id="H5-原生混合开发"><a href="#H5-原生混合开发" class="headerlink" title="H5+原生混合开发"></a>H5+原生混合开发</h6><p>这类框架主要原理就是将APP的一部分需要动态变动的内容通过H5来实现，通过原生的网页加载控件WebView (Android)或WKWebView（ios）来加载。这样一来，H5部分是可以随时改变而不用发版，动态化需求能满足；同时，由于h5代码只需要一次开发，就能同时在Android和iOS两个平台运行，这也可以减小开发成本，也就是说，h5部分功能越多，开发成本就越小。我们称这种h5+原生的开发模式为混合开发 ，采用混合模式开发的APP我们称之为混合应用或Hybrid APP ，如果一个应用的大多数功能都是H5实现的话，我们称其为Web APP,也就是所谓的”套壳App”。</p>
+<p>目前混合开发框架的典型代表有：Cordova、Ionic 和微信小程序，而目前为止微信小程序是在webview中渲染的，并非原生渲染。</p>
+<h2 id="微信小程序开发"><a href="#微信小程序开发" class="headerlink" title="微信小程序开发"></a>微信小程序开发</h2><h6 id="微信小程序的开发入门"><a href="#微信小程序的开发入门" class="headerlink" title="微信小程序的开发入门"></a>微信小程序的开发入门</h6><ul>
+<li>开发工具   <a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener">下载地址</a></li>
+<li>微信公众平台申请小程序的AppID <a href="https://mp.weixin.qq.com/" target="_blank" rel="noopener">申请地址</a></li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-df58a4fb8a799680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h6 id="第一个小程序"><a href="#第一个小程序" class="headerlink" title="第一个小程序"></a>第一个小程序</h6><p><img src="https://upload-images.jianshu.io/upload_images/2788523-88f741b129cf7d37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">├─ pages/ ······································ 页面目录</span><br><span class="line">│ ├─ index/ ··································· index页面</span><br><span class="line">│ │ ├─ index.js ······························ index页面逻辑</span><br><span class="line">│ │ ├─ index.wxml ···························· index页面结构</span><br><span class="line">│ │ └─ index.wxss ···························· index页面样式</span><br><span class="line">│ │ └─ index.json ···························· index页面配置(局部)</span><br><span class="line">│ └─ logs/ ···································· logs页面</span><br><span class="line">│ ├─ logs.js ······························· logs页面逻辑</span><br><span class="line">│ ├─ logs.wxml ····························· logs页面结构</span><br><span class="line">│ └─ logs.wxss ····························· logs页面样式</span><br><span class="line">├─ utils/ ······································ 公共脚本目录</span><br><span class="line">│ └─ util.js ·································· 工具脚本</span><br><span class="line">├─ app.js ······································ 应用程序逻辑  用于定义整个应用的逻辑</span><br><span class="line">用来监听并处理小程序的生命周期函数、声明全局变量</span><br><span class="line">├─ app.json ································ 应用程序配置(全局)   对整个小程序的全局配置</span><br><span class="line">配置小程序是由哪些页面组成，配置小程序的窗口背景色等</span><br><span class="line">└─ app.wxss ······························· 应用程序公共样式 用来设置整个应用的公共样式</span><br></pre></td></tr></table></figure></p>
+<h6 id="微信公众平台后端"><a href="#微信公众平台后端" class="headerlink" title="微信公众平台后端"></a>微信公众平台后端</h6><p><img src="https://upload-images.jianshu.io/upload_images/2788523-48f493d037902fbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<h6 id="微信小程序学习"><a href="#微信小程序学习" class="headerlink" title="微信小程序学习"></a>微信小程序学习</h6><p>微信小程序学习，包括小程序的组件、api、云开发、教程等等信息。<br><a href="https://developers.weixin.qq.com/miniprogram/dev/#%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AE%80%E4%BB%8B" target="_blank" rel="noopener">微信公众平台-小程序</a></p>
+<h2 id="小程序分享"><a href="#小程序分享" class="headerlink" title="小程序分享"></a>小程序分享</h2><h6 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h6><p><a href="https://github.com/TalkingData/iview-weapp" target="_blank" rel="noopener">好用的小程序的组件库</a></p>
+<h6 id="预加载"><a href="#预加载" class="headerlink" title="预加载"></a>预加载</h6><h6 id="云开发"><a href="#云开发" class="headerlink" title="云开发"></a>云开发</h6>
           
         
       
