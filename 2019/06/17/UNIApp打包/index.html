@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>UNIApp打包 | 陆陆陆</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="项目配置项目中的 manifast.json 文件下进行相关的项目配置操作。     微信小程序 百度小程序 抖音小程序     需要注册APPID 需要注册APPID 需要注册APPID    一 微信小程序相关配置  需要到微信公众平台申请微信小程序，并获得到相应的APPID。 涉及到使用位置的需要填写描述  相关的插件等配置 配置地址   步骤  编译器在编辑完成之后打开微信开发工具（也可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UNIApp打包">
+<meta property="og:url" content="http://yoursite.com/2019/06/17/UNIApp打包/index.html">
+<meta property="og:site_name" content="陆陆陆">
+<meta property="og:description" content="项目配置项目中的 manifast.json 文件下进行相关的项目配置操作。     微信小程序 百度小程序 抖音小程序     需要注册APPID 需要注册APPID 需要注册APPID    一 微信小程序相关配置  需要到微信公众平台申请微信小程序，并获得到相应的APPID。 涉及到使用位置的需要填写描述  相关的插件等配置 配置地址   步骤  编译器在编辑完成之后打开微信开发工具（也可以">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-e261bbc2ddb93c6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-2d02ea8bd0c8f943.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-198ac4bafcfb1f46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-8803fd605273db4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-d67c8f3ff4fc7b9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-9b6d0235272ac5cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-9ae34242a59eadb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-e18829a0c2091bbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-562a122ba77b6e06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-122589efc6720838.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-6d1e30f173fea619.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-c4406f0c73b2be95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-9783453479fa075a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-c9ef16e22e45f482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2788523-98eca15a4813c0f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-06-17T04:02:37.978Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UNIApp打包">
+<meta name="twitter:description" content="项目配置项目中的 manifast.json 文件下进行相关的项目配置操作。     微信小程序 百度小程序 抖音小程序     需要注册APPID 需要注册APPID 需要注册APPID    一 微信小程序相关配置  需要到微信公众平台申请微信小程序，并获得到相应的APPID。 涉及到使用位置的需要填写描述  相关的插件等配置 配置地址   步骤  编译器在编辑完成之后打开微信开发工具（也可以">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2788523-e261bbc2ddb93c6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+</html>
+<body style="
+
+  background: url(https://hbimg.huabanimg.com/257faa865a42a365310c4a246cc545b6bbd1d21c3f05d-tRxg9r_fw658) center center no-repeat;
+  background-size: contain;
+
+
+  background-color: #eff0f6
+
+">
+  <div id="container">
+    <nav id="nav">
+  <header class="header">
+    <a href="/" class="title">陆</a>
+  </header>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+        
+          
+            <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn iconfont icon-dribbble"></a>
+          
+        
+          
+            <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn iconfont icon-behance"></a>
+          
+        
+          
+            <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn iconfont icon-lofter"></a>
+          
+        
+          
+            <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn iconfont icon-instagram"></a>
+          
+        
+          
+            <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn iconfont icon-github"></a>
+          
+        
+      
+    </div>
+    <div class="menu">
+      
+        
+            <a href="/" class="nav-menu ">HOME</a>
+          
+        
+            <a href="/archives" class="nav-menu ">ARCHIVE</a>
+          
+        
+      
+    </div>
+  </div>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title">UNIApp打包</h2>
+  <p class="sub">Jun 17, 2019</p>
+  <article class="content">
+    <h3 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h3><p>项目中的 manifast.json 文件下进行相关的项目配置操作。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-e261bbc2ddb93c6b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th>微信小程序</th>
+<th>百度小程序</th>
+<th>抖音小程序</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需要注册APPID</td>
+<td>需要注册APPID</td>
+<td>需要注册APPID</td>
+</tr>
+</tbody>
+</table>
+<h6 id="一-微信小程序"><a href="#一-微信小程序" class="headerlink" title="一 微信小程序"></a>一 微信小程序</h6><p>相关配置</p>
+<ul>
+<li>需要到微信公众平台申请微信小程序，并获得到相应的APPID。</li>
+<li>涉及到使用位置的需要填写描述 </li>
+<li>相关的插件等配置 <a href="https://uniapp.dcloud.io/collocation/manifest?id=mp-weixin" target="_blank" rel="noopener">配置地址</a></li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-2d02ea8bd0c8f943.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>步骤</p>
+<ul>
+<li>编译器在编辑完成之后打开微信开发工具（也可以自己导入）</li>
+<li>在微信开发者工具打开完成之后可以进行效果查看以及代码的相关上传、提交审核、发布体验版等操作。</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-198ac4bafcfb1f46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>编译打印信息<br><img src="https://upload-images.jianshu.io/upload_images/2788523-8803fd605273db4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>微信开发者工具配置</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-d67c8f3ff4fc7b9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>编译完成之后会在 /Users/faith/Desktop/贤邦OA/xbapp/unpackage/dist/build/mp-weixin 路径下导出微信小程序。<br><img src="https://upload-images.jianshu.io/upload_images/2788523-9b6d0235272ac5cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>在微信开发者工具打开完成之后可以进行效果查看以及代码的相关上传、提交审核、发布体验版等操作。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-9ae34242a59eadb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h6 id="二-百度小程序"><a href="#二-百度小程序" class="headerlink" title="二 百度小程序"></a>二 百度小程序</h6><p><a href="https://smartprogram.baidu.com/docs/develop/tutorial/publish/#%E5%8F%91%E5%B8%83/" target="_blank" rel="noopener">百度小程序开发文档</a><br><img src="https://upload-images.jianshu.io/upload_images/2788523-e18829a0c2091bbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h6 id="三-头条小程序"><a href="#三-头条小程序" class="headerlink" title="三 头条小程序"></a>三 头条小程序</h6><p><a href="https://developer.toutiao.com/docs/devtool/ide.html#%E5%B7%A5%E5%85%B7%E6%A0%8F" target="_blank" rel="noopener">头条小程序开发文档</a><br><img src="https://upload-images.jianshu.io/upload_images/2788523-562a122ba77b6e06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h6 id="四-iOS端打包"><a href="#四-iOS端打包" class="headerlink" title="四 iOS端打包"></a>四 iOS端打包</h6><table>
+<thead>
+<tr>
+<th>离线打包</th>
+<th>云打包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下载官网上最新SDK 生成本地打包App资源</td>
+<td>在uniapp云服务器上自动打包（有下载次数限制5次）编辑器上的项目配置针对云打包，本地打包的相关权限配置要以sdk工程为主</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://ask.dcloud.net.cn/article/35682" target="_blank" rel="noopener">官方教程</a></p>
+<ul>
+<li>离线打包方式为下载官网最新的sdk <a href="http://ask.dcloud.net.cn/article/103" target="_blank" rel="noopener">下载地址</a></li>
+<li>导出本地打包的APP资源</li>
+<li>将iOS项目中的www文件更换</li>
+<li>更改相关配置以及配置好证书和描述文件，开始打包。</li>
+</ul>
+<p>官方最新sdk</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-122589efc6720838.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>生成本地打包资源<br><img src="https://upload-images.jianshu.io/upload_images/2788523-6d1e30f173fea619.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>本地打包APP资源文件路径<br><img src="https://upload-images.jianshu.io/upload_images/2788523-c4406f0c73b2be95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>iOS SDK工程基础配置</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-9783453479fa075a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-c9ef16e22e45f482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>iOS云打包</p>
+<ul>
+<li>配置相关信息</li>
+<li>将制作好的证书p12文件以及描述文件传入</li>
+<li>自动生成.ipa包</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/2788523-98eca15a4813c0f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h6 id="五-安卓端打包"><a href="#五-安卓端打包" class="headerlink" title="五 安卓端打包"></a>五 安卓端打包</h6><p><a href="http://ask.dcloud.net.cn/article/13141" target="_blank" rel="noopener">官方教程</a></p>
+
+  </article>
+  <footer class="f-cf">
+    
+    
+      <a href="/2019/05/14/Apple-ID-开启双重验证添加信任手机号/" class="link f-fr">Apple ID 开启双重验证添加信任手机号⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  895928691@qq.com
+  
+    
+      
+        · <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn">Dribbble</a>
+      
+    
+      
+        · <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn">Behance</a>
+      
+    
+      
+        · <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn">Lofter</a>
+      
+    
+      
+        · <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn">Instagram</a>
+      
+    
+      
+        · <a href="https://github.com/NEOLYH" target="_blank" class="nav-icn">GitHub</a>
+      
+    
+  
+  <span class="copyright">All rights reserved @lu</span>
+</footer>
+  </div>
+</body>
+</html>
